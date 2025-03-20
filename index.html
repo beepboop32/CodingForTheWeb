@@ -10,8 +10,44 @@
     </head>
     <body>
     <header>
-        <h1>Coding for the Web</h1>
+      <img id="header-logo" src="../logo.png" alt="logoEKC">
+      <h1>Coding for the Web</h1>
+      <img id="header-logo-EKC" src="../logoEKC.png" alt="logo">
+      
+
+
+
+
+
+
     </header>
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="nav-mobile">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="../Basics/basics.html">Basics</a>
+        <a href="../Resources/resources.html">Resources</a>
+        <a href="../Uses/uses.html">Uses</a>
+        <a href="../Syntax/syntax.html">Syntax</a>
+        <a href="../History/history.html">History</a>
+        <a href="../About/about.html">About</a>
+      </div>
+    </nav>
+
+
+
+
+    <div id="nav-button-hamburger">
+      <button class="nav-button-hamburger"><span onclick="openNav()"><img src="hamburgerMenu.jpg" width="30" height="30"></span></button>
+      <span onclick="openNav()"></span>
+    </div>
+
+
     <div class="wrapper">
       <aside class="side-nav">
         <nav id="nav">
@@ -34,9 +70,12 @@
          </div>
 
        </main>
+
      </div>
+
+
+
     <footer>
-      
       <div class="footer-links">
         <a href="../index.html">Home</a>
         <a href="../Basics/basics.html">Basics</a>
@@ -48,13 +87,14 @@
         <a href="../Basics/basics.html">Terms and Conditions</a>
         <a href="../Basics/basics.html">Privacy Policy</a>
       </div> 
+
       <div id="copyright">
         <p>Copyright Information 2025</p>
       </div>
-      
-      
+
+      <div id="footer-logo">
+        <img src="../logo.png" alt="logo">
+      </div>
     </footer>
-    <div id="footer-logo">
-      <img id="logo"  src="../logo.png" alt="logo">
-    </div>
+
     </body>
