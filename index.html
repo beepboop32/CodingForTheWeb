@@ -9,6 +9,7 @@
     <link rel="icon" href="../faviconPy.ico">
     </head>
     <body>
+      
     <header>
       <img id="header-logo" src="../logo.png" alt="logoEKC">
       <h1>Coding for the Web</h1>
@@ -22,30 +23,29 @@
 
     </header>
 
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
+    <nav class="hamburger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="label-toggle">
+        <span>
+          <img id="hamburgerImg" src="../hamburger1.webp">
+        </span>
+        <span></span>
+        <span></span>
       </label>
-      <div class="nav-mobile">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../index.html">Home</a>
-        <a href="../Basics/basics.html">Basics</a>
-        <a href="../Resources/resources.html">Resources</a>
-        <a href="../Uses/uses.html">Uses</a>
-        <a href="../Syntax/syntax.html">Syntax</a>
-        <a href="../History/history.html">History</a>
-        <a href="../About/about.html">About</a>
-      </div>
+      
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Basics/basics.html">Basics</a></li>
+        <li><a href="../Resources/resources.html">Resources</a></li>
+        <li><a href="../Uses/uses.html">Uses</a></li>
+        <li><a href="../Syntax/syntax.html">Syntax</a></li>
+        <li><a href="../History/history.html">History</a></li>
+        <li><a href="../About/about.html">About</a></li>
+        <li><label id="close" for="menu-toggle" class="close-menu">Close</label></li>
+      </ul>
+
     </nav>
 
-
-
-
-    <div id="nav-button-hamburger">
-      <button class="nav-button-hamburger"><span onclick="openNav()"><img src="hamburgerMenu.jpg" width="30" height="30"></span></button>
-      <span onclick="openNav()"></span>
-    </div>
 
 
     <div class="wrapper">
@@ -69,7 +69,7 @@
             <p>Click <a href="../Basics/basics.html">here</a> to find out more!</p>
          </div>
 
-       </main>
+       
 
      </div>
 
@@ -96,5 +96,6 @@
         <img src="../logo.png" alt="logo">
       </div>
     </footer>
-
-    </body>
+    </main>
+    
+    </html>

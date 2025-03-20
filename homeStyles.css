@@ -1,5 +1,6 @@
 html, body {
-    height: 100%; /* Ensure the parent container has a defined height */
+    height: 100%;
+    margin: 0; /* Ensure the parent container has a defined height */
 }
 
 body {
@@ -81,45 +82,98 @@ header h2 {
     transition: 0.3s;
 }
 
-.checkbtn {
-    font-size: 1.5rem;
-    color: white;
+
+.hamburger-menu {
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     cursor: pointer;
-   }
-
-
-
-nav {
-    padding: 1.5rem 2rem;
-    background-color: #222831;
-    color: #fff;
-   }
-
-
-.nav-mobile {
-display: none;
+    padding: 10px;
 }
 
+#hamburgerImg {
+    width: 40px;
+    height: 40px;
+    
+}
 
-#check:checked ~ .nav-mobile {
+#menu-toggle { /*hide checkbox*/
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+   
+    width: 10px;
+    gap: 5px;
+}
+
+.menu-icon span {
     display: block;
-   }
-
-
-
-.nav-mobile {
-position: absolute;
-top: 4.5rem;
-left: 0;
-background: #222831;
-z-index: 1;
-width: 200px;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
 }
-.nav-mobile a {
-color: #fff;
-padding: 1rem 1.5rem;
-display: block;
+
+.menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    
+    background: #2e6793;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.6;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+    padding: 20px 30px;
+
+    
+}
+
+.menu li a:hover {
+    background-color: #3476ab;
+    opacity: 1;
+    transition: 0.3s;
+}
+#close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    opacity: 0.6;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+#menu-toggle:checked ~ .menu {
+    display: block;
+  }
+  
+
+
 
 
 
@@ -192,46 +246,58 @@ footer {
 }
 
 
-
-
-@media (max-width: 600px) { /*small screen*/
-
-}
-
-@media (min-width: 601px) { /*large screen*/
-     nav .nav-mobile{
-        display: none;
-    }
-    nav .checkbtn {
-        display: none;
-    }
-    .side-nav {
-        display: flex;
-    }
+@media (max-width: 600px) {
     .wrapper {
-        display: flex;
-    }
-    .wrapper_inner {
-        display: flex;
         flex-direction: column;
     }
+
+    .side-nav {
+        display: none;
+    }
+
+    header {
+        height:100px;
+        font-size: 14px;
+    }
+
+    #header-logo {
+        width: 80px;
+        height: auto;
+    }
+
+    #header-logo-EKC {
+        width: 150px;
+        height: auto;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    #footer-logo {
+        justify-content: center;
+    }
+
+    #footer-logo img {
+        display: none;
+    }
 }
 
+@media (min-width: 601px) {
+    .menu {
+        display: none;
+    }
 
-@media (max-width: 600px) {
-    .checkbtn {
-    display: block;
-    font-size: 5rem;
-    position: absolute;
-    top: 30px;
-    left: 40px;
+    .hamburger-menu {
+        display: none;
     }
-   .nav-mobile {
-    top: 160px;
-    width: 100%;
-    }
-   .nav-mobile a {
-    font-size: 2rem;
-    padding: 2rem 3rem;
-    }
-   }
+}
