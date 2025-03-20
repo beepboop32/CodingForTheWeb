@@ -199,10 +199,10 @@ footer {
 }
 
 @media (min-width: 601px) { /*large screen*/
-    .nav-mobile{
+     nav .nav-mobile{
         display: none;
     }
-    .checkbtn {
+    nav .checkbtn {
         display: none;
     }
     .side-nav {
