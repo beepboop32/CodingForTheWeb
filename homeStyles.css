@@ -15,7 +15,7 @@ header {
 }
 
 header h2 {
-
+    display: flex;
     padding: 20px;
 
 }
@@ -54,6 +54,9 @@ header h2 {
     transition: 0.3s;
 }
 
+
+
+
 main {
     flex: 1;
     font-size: 20px;
@@ -61,10 +64,99 @@ main {
     
 }
 
-.hamburgerImg {
+#header-logo {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#header-logo-EKC {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+
+#hamburgerImg {
     height: auto;
     width: 40px;
 }
+
+#menu-toggle{ /*hide the chackbox*/
+    display: none;
+}
+
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+    gap: 5px;
+}
+
+.menu-icon span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width:200px;
+    height: 100vh;
+    z-index: 100;
+    background: #2e6793;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    display:block;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.6;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+    padding: 20px 30px;
+
+}
+
+.menu li a:hover {
+    background-color: #3476ab;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    opacity: 0.6;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#menu-toggle:checked ~ .menu{
+    display: block;
+}
+
 .wrapper_inner {
     padding: 20px;
     background-color: #e6f0f7;
@@ -102,7 +194,7 @@ main {
     position: absolute;
 }
 
-#logo {
+#footer-logo {
     width: 80px;
     height: 80px;
     margin-top: 4vh;
@@ -111,6 +203,15 @@ main {
     transform: translateX(-50%);
     position: absolute;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#footer-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 footer {
