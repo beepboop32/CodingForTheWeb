@@ -91,6 +91,8 @@ main {
 
 
 
+
+
 #hamburgerImg {
     height: auto;
     width: 40px;
@@ -201,41 +203,65 @@ main {
     flex: 1 1 calc(35% - 10px); /* Reduced gap between columns */
 }
 
+
+
+
+
+#briefText {
+    position: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 1px;
+    padding: 20px;
+}
+
 .box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
     border: 5px solid #3476ab;
     background-color: #e6f0f7;
     padding: 10px;
     margin: 10px;
     width: auto;
-    flex: 1; 
-    height: 100vh; 
-    box-sizing: border-box; /* Include padding and border in height calculation */
+   
+    box-sizing: border-box; 
+    flex-wrap: wrap;
+}
+
+#explainations {
+    flex: 1;
+    padding: 20px;
+    border: 5px solid #3476ab;
+    background-color: #e6f0f7;
+}
+
+#rightBox {
+    flex: 1;
+    padding: 20px;
+    border: 5px solid #3476ab;
+    background-color: #e6f0f7;
+    max-width: 1000px;
 }
 
 #syntaxImg {
     display: flex;
-    justify-content: right;
-    align-items: right;
-    width: 50px;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    max-width: 700px; 
+    height: auto; 
 }
 
-#explainations {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    margin: 20px;
-    margin-right: auto;
-    flex-direction: column;
-    border: 5px solid #3476ab;
-    background-color: #e6f0f7;
-    width: 40%;
-    height: 90vh;
+
+#smallImg {
+    color: #3476ab;
+
+    font-size: 13px;
 }
+
 
 #footer-text {
     font-size: 20px;
@@ -336,6 +362,11 @@ footer {
 
 }
 
+@media (min-width: 900px){
+    smallImg {
+        display: none;
+    }
+}
 @media (min-width: 601px) {
     .hamburger-menu {
         display: none;
@@ -343,5 +374,6 @@ footer {
     header {
         font-size: 18px;
     }
+
 
 }
