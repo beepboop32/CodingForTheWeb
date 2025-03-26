@@ -5,3 +5,7 @@ function openNav() {
 function closeNav() {
     document.getElementByClassName("nav-mobile").style.width = "0";
 }
+
+function documentionVisit() {
+    window.open("https://docs.python.org/3/");
+}
