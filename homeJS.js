@@ -9,3 +9,7 @@ function closeNav() {
 function documentionVisit() {
     window.open("https://docs.python.org/3/");
 }
+
+function contactPage() {
+    window.open("../Contact/contact.html");
+}
