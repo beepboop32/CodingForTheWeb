@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Uses</title>
+    <title>Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <script src="usesJS.js" defer></script>
@@ -15,7 +15,7 @@
       
     <header>
       <img id="header-logo" src="../logo.png" alt="logoEKC">
-      <h1>Uses</h1>
+      <h1>Quiz</h1>
       <img id="header-logo-EKC" src="../logoEKC.png" alt="logo">
       
 
@@ -40,7 +40,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../Basics/basics.html">Basics</a></li>
         <li><a href="../Resources/resources.html">Resources</a></li>
-        <li><a href="../Uses/uses.html">Uses</a></li>
+        <li><a href="../Uses/uses.html">Quiz</a></li>
         <li><a href="../Syntax/syntax.html">Syntax</a></li>
         <li><a href="../History/history.html">History</a></li>
         <li><a href="../About/about.html">About</a></li>
@@ -57,7 +57,7 @@
             <a href="../index.html">Home</a>
             <a href="../Basics/basics.html">Basics</a>
             <a href="../Resources/resources.html">Resources</a>
-            <a href="../Uses/uses.html">Uses</a>
+            <a href="../Uses/uses.html">Quiz</a>
             <a href="../Syntax/syntax.html">Syntax</a>
             <a href="../History/history.html">History</a>
             <a href="../About/about.html">About</a>
@@ -65,13 +65,22 @@
       </aside>
       <main>
         <div class="wrapper_inner">
-            <h2>Introduction to Python:</h2>
-            <h3>Ready to start your coding journey?</h3>
-            <p>
-                On this site you will learn an overview of the basic concepts of programming, as well as an introduction to the syntax needed to write Python code. A brief history and additional resources are also included to ensure you get the most out of this experience and are motivated to find out more!
-            </p>
-            <p>Click <a href="../Basics/basics.html">here</a> to find out more!</p>
-         </div>
+            <h2>Quiz</h2>
+            <p>Now you have explored the documentation website, reviewed the basics of programming languages, and had a look at other resources, it is time to take a quiz to test your knowledge!</p>
+            <div class="quiz-container" id="quiz-container">
+              
+              <div id="question-text" class="question-text">
+                
+                  
+              </div>
+              <div class="choices">
+                  <button class="choice" onclick="selectAnswer(0)">Choice 1</button>
+                  <button class="choice" onclick="selectAnswer(1)">Choice 2</button>
+                  <button class="choice" onclick="selectAnswer(2)">Choice 3</button>
+              </div>
+     
+          </div>
+            <p id="feedback"></p>   </div>
 
        
 

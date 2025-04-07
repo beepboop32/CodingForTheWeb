@@ -90,6 +90,33 @@ main {
 }
 
 
+.choices {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #3476ab;
+    text-align: center;
+}
+
+.choices button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #2e6793;
+    color: #ffffff;
+    min-width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choices button:hover {
+    background-color: #3476ab;
+}
+
 
 #hamburgerImg {
     height: auto;
