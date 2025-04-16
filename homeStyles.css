@@ -14,7 +14,7 @@ header {
     padding: 10px;
     background-color: #ffffff;
     color: #3476ab;
-    gap: 20px;
+    gap: 10px;
     height: 150px;
     font-size: 23px;
     position: relative;
@@ -99,7 +99,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 10px;
+    
     width: 100px;
     height: 100px;
 }
@@ -161,6 +161,10 @@ header h2 {
 
 
 main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     flex: 1;
     font-size: 20px;
     padding: 20px;
@@ -185,12 +189,14 @@ main {
     align-items: center;
    
 
-    padding: 10px 20px;
-
+    padding: 20px 30px;
+    margin-left:25px;
+    margin-right: 25px;
     background-color: #e6f0f7;
     transition: 0.3s;
-    border: #2e6793 solid 4px;
+    border: #2e6793 solid 3px;
     font-weight: bold;
+    font-size: 15px;
     cursor: pointer;
 }
 #contact:hover {
@@ -439,6 +445,26 @@ main {
         display: none;
     }
     #documentation {
+        display: none;
+    }
+    #responsiveDoc {
+        display: flex;
+
+    }
+    #homeVideo {
+        width: 100%;
+        height: auto;
+        min-width: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+    header h1  {
+        font-size: 35px;
+    }
+    #footerLogo {
+        display: none;
+    }
+    #contact {
         display: none;
     }
     .hamburger-menu {

@@ -155,8 +155,8 @@ main {
     font-size: 18px;
     background-color: #cee5f1;
     border-radius: 20px;
-    border: 5px solid #3476ab; /* Larger blue border around the elements */
-    padding: 40px; /* Increased padding inside the box for more room */
+    border: 5px solid #3476ab; 
+    padding: 40px;
 }
 
 

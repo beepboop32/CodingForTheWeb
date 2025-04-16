@@ -37,6 +37,26 @@ footer {
     gap: 20px;
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    padding: 10px 20px;
+
+    background-color: #e6f0f7;
+    transition: 0.3s;
+    border: #2e6793 solid 3px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#contact:hover {
+    transition: 0.3s;
+    background-color: #3476ab;
+    color: #ffffff;
+}
 
 
 .footer-links {
@@ -109,11 +129,7 @@ footer {
     padding: 10px;
 }
 
-header h2 {
-    display: flex;
-    padding: 20px;
 
-}
 .wrapper {
     display: flex;
     flex-direction: row;
