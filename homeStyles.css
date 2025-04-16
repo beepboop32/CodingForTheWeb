@@ -10,13 +10,14 @@ body {
 header {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px;
     background-color: #ffffff;
     color: #3476ab;
-    text-align: left;
+    gap: 20px;
     height: 150px;
     font-size: 23px;
+    position: relative;
 }
 
 
@@ -112,7 +113,10 @@ footer {
     height: auto;
     padding: 10px;
 }
-
+header h1 {
+    margin: 0;
+    font-size: 50px;
+}
 header h2 {
     display: flex;
     padding: 20px;
@@ -175,22 +179,19 @@ main {
     height: auto;
     
 }
-
 #contact {
-    flex: flex-start;
-    justify-content: left;
-    align-items: left;
     display: flex;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    width: auto;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+   
+
+    padding: 10px 20px;
+
     background-color: #e6f0f7;
     transition: 0.3s;
     border: #2e6793 solid 4px;
     font-weight: bold;
-
+    cursor: pointer;
 }
 #contact:hover {
     transition: 0.3s;
