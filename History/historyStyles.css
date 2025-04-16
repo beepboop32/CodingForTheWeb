@@ -276,21 +276,8 @@ main {
         font-size: 15px;
         padding: 10px;
     }
-    #footer-logo {
-        display: none;
-    }
-    footer {
-        flex-direction: column;
-        padding: 10px;
-    }
-    #header-logo {
-        width: 100px;
-        height: auto;
-    }
-    #header-logo-EKC {
-        width: 200px;
-        height: auto;
-    }
+
+
     #copyright {
         font-size: 10px;
     }
