@@ -244,8 +244,17 @@ main {
 }
 
 .wrapper_inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     background-color: #e6f0f7;
+    
+    
+}
+
+#introText {
+    font-size: 18px;
 }
 
 
