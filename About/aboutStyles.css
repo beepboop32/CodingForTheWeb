@@ -58,6 +58,28 @@ footer {
     color: #ffffff;
 }
 
+#terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e6f0f7;
+    transition: 0.3s;
+    border: #2e6793 solid 3px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#terms:hover {
+    transition: 0.3s;
+    background-color: #3476ab;
+    color: #ffffff;
+}
+
+
+
 
 .footer-links {
     margin-top: 50px;
@@ -108,7 +130,16 @@ footer {
     object-fit: contain;
 }
 
-
+h2 {
+    font-size: 29px;
+    color: #2e6793;
+    
+}
+h3 {
+    font-size: 25px;
+    color: #404040;
+    
+}
 
 #header-logo {
     display:flex;
@@ -267,6 +298,7 @@ main {
 .wrapper_inner {
     padding: 20px;
     background-color: #e6f0f7;
+    
 }
 
 

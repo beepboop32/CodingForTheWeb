@@ -48,6 +48,13 @@ footer {
 
 }
 
+
+h2 {
+    display: flex;
+    font-size: 29px;
+    color: #3476ab;
+}
+
 .footer-links a {
     color: #ffffff;
     text-decoration: none;

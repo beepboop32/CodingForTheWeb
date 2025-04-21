@@ -18,7 +18,11 @@ header {
     height: 150px;
     font-size: 23px;
 }
-
+h2 {
+    display: flex;
+    font-size: 29px;
+    color: #3476ab;
+}
 
 footer {
     flex-shrink: 0;
@@ -106,11 +110,7 @@ footer {
     padding: 10px;
 }
 
-header h2 {
-    display: flex;
-    padding: 20px;
 
-}
 .wrapper {
     display: flex;
     flex-direction: row;

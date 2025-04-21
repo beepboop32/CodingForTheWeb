@@ -1,6 +1,5 @@
 body {
     display: flex;
-    height: 100%;
     flex-direction: column;
     margin: 0;
     font-family: Verdana, sans-serif;
@@ -19,7 +18,11 @@ header {
     height: 150px;
     font-size: 23px;
 }
-
+h2 {
+    display: flex;
+    font-size: 29px;
+    color: #3476ab;
+}
 
 footer {
     flex-shrink: 0;
@@ -97,7 +100,15 @@ footer {
     height: 100px;
 }
 
-
+#header-logo-EKC {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
 
 
 .wrapper {
@@ -137,28 +148,6 @@ footer {
 
 
 
-h2 {
-    display: flex;
-    font-size: 29px;
-    color: #3476ab;
-}
-
-main {
-    flex: 1;
-    font-size: 20px;
-    padding: 20px;
-    
-}
-#resources-list {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    font-size: 18px;
-    background-color: #cee5f1;
-    border-radius: 20px;
-    border: 5px solid #3476ab; 
-    padding: 40px;
-}
 
 
 
@@ -257,6 +246,7 @@ main {
 
 
 
+
 @media (max-width: 600px), (max-height: 600px){
     .menu{
         display: none;
@@ -281,10 +271,6 @@ main {
         padding: 10px;
     }
 
-    #header-logo {
-        width: 100px;
-        height: auto;
-    }
 
     #copyright {
         font-size: 10px;

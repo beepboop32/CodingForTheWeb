@@ -218,6 +218,13 @@ main {
     
 }
 
+h2 {
+    display: flex;
+    font-size: 29px;
+    color: #3476ab;
+}
+
+
 #documentation {
     cursor:pointer;
     display: flex;

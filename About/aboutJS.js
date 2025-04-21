@@ -10,3 +10,7 @@ function closeNav() {
 function contactPage() {
     window.open("../Contact/contact.html");
 }
+
+function termsPage() {
+    window.open("../T&Cs/terms.html");
+}
