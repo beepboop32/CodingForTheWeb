@@ -53,6 +53,17 @@ h2 {
     display: flex;
     font-size: 29px;
     color: #3476ab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#startText, #endText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .footer-links a {
@@ -113,6 +124,7 @@ h2 {
 }
 
 header h2 {
+
     display: flex;
     padding: 20px;
 
@@ -152,7 +164,60 @@ header h2 {
     transition: 0.3s;
 }
 
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between rows */
+    width: 100%; /* Ensure the form takes up the full width */
+    padding: 10px;
+    max-width: 600px; /* Optional: Limit the form's width */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #ffffff;
+}
 
+
+#submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background-color: #3476ab;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+#submitButton:hover {
+    background-color: #3476ab;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+#contactForm input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    accent-color: #3476ab; 
+}
+
+
+#contactForm input[type="checkbox"]:checked {
+    box-shadow: 0 0 5px #3476ab;
+}
 
 
 main {

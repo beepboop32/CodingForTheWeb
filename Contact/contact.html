@@ -10,6 +10,7 @@
 </head>
 <body>
 <header>
+  <img id="header-logo" src="../logo.png" alt="logoEKC">
     <h1>Contact</h1>
 </header>
 
@@ -25,61 +26,63 @@
           <a href="../About/about.html">About</a>
       </nav>
     </aside>
-
+    <nav class="hamburger-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="label-toggle">
+        <span>
+          <img id="hamburgerImg" src="../hamburger1.webp">
+        </span>
+        <span></span>
+        <span></span>
+      </label>
+      
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Basics/basics.html">Basics</a></li>
+        <li><a href="../Resources/resources.html">Resources</a></li>
+        <li><a href="../Uses/uses.html">Quiz</a></li>
+        <li><a href="../Syntax/syntax.html">Syntax</a></li>
+        <li><a href="../History/history.html">History</a></li>
+        <li><a href="../About/about.html">About</a></li>
+        <li><label id="close" for="menu-toggle" class="close-menu">Close</label></li>
+      </ul>
+  
+    </nav>
 
     <main>
+      <div class="wrapper_inner">
         <h2>Contact Us</h2>
-        <p>Fill out the form below to contact us.</p>
+        <p id="startText">Fill out the form below to contact us.</p>
         <form id="contactForm">
             <table>
-                <tr>
-                    <td>Name:</td><td><input type="text"></td>
-                </tr>
-                
-
-                <tr>
-                  <td>Are you a student?:</td><td><input type="checkbox"></td>
-                </tr>
-             
-                <tr>
-                    <td>Email:</td><td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>Phone number:</td><td><input type="text"></td>
-                </tr>
-        
-        
-                <tr>
-                    <td>&nbsp;</td><td><input type="submit" value="Submit"></td>
-                </tr>
-        
-        
+              <tr>
+                <td>Name:</td><td><input type="text" id="name"></td>
+              </tr>
+              <tr>
+                <td>Are you a student?:</td><td><input type="checkbox" id="isStudent"></td>
+              </tr>
+              <tr>
+                <td>Email:</td><td><input type="text" id="email"></td>
+              </tr>
+              <tr>
+                <td>Phone number:</td><td><input type="text" id="phone"></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td><td><input type="submit" value="Submit" id="submitButton"></td>
+              </tr>
+              
             </table>
+            <p id="feedback" class="feedback"></p>
         </form>
+        <br>
+        <p id="endText">Thank you for using Coding for the Web</p>
     </main>
-</div>
-<nav class="hamburger-menu">
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="label-toggle">
-      <span>
-        <img id="hamburgerImg" src="../hamburger1.webp">
-      </span>
-      <span></span>
-      <span></span>
-    </label>
-    
-    <ul class="menu">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../Basics/basics.html">Basics</a></li>
-      <li><a href="../Resources/resources.html">Resources</a></li>
-      <li><a href="../Uses/uses.html">Quiz</a></li>
-      <li><a href="../Syntax/syntax.html">Syntax</a></li>
-      <li><a href="../History/history.html">History</a></li>
-      <li><a href="../About/about.html">About</a></li>
-      <li><label id="close" for="menu-toggle" class="close-menu">Close</label></li>
-    </ul>
 
-  </nav>
+</div>
+
+
+
+
   
 
   <footer>

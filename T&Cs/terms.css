@@ -116,6 +116,15 @@ footer {
     flex-direction: row;
 }
 
+.wrapper_inner {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #e6f0f7;
+}
+
 .side-nav {
     font-size: 20px;
     display: flex;
