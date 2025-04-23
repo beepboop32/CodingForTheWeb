@@ -8,6 +8,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     feedback.style.display = "block";
 
     const form = document.getElementById("contactForm");
+    
     const fields = form.querySelectorAll("input[type='text'], textarea, select");
     let allFilled = true;
     //remove whitespace from inputs bc people are silly billy (me testing)

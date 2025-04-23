@@ -113,10 +113,7 @@ footer {
     height: auto;
     padding: 10px;
 }
-header h1 {
-    margin: 0;
-    font-size: 50px;
-}
+
 header h2 {
     display: flex;
     padding: 20px;

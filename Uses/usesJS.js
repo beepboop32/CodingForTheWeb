@@ -23,6 +23,16 @@ const questions = [
         choices: ["let num = 1;", "num = 1", "num == 1"],
         correct: 1
     },
+    {
+        question: "Is python high level, Low level, or machine code?",
+        choices: ["High Level", "Low Level", "Machine Code"],
+        correct: 0
+    },
+    {
+        question: "Are for loops count-controlled or condition-controlled?",
+        choices: ["Count-controlled", "Condition-controlled", "Integer-controlled"],
+        correct: 0
+    }
 ];
 
 function showQuestion() {
