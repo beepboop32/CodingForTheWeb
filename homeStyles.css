@@ -1,10 +1,14 @@
-body {
+html, body {
     display: flex;
     flex-direction: column;
     margin: 0;
     font-family: Verdana, sans-serif;
     background-color: #d0e6f7;
+    height: 100%;
 }
+
+
+
 
 header {
     display: flex;
@@ -32,6 +36,7 @@ footer {
     border: 5px solid #b9b9b9; 
     text-align: center;
     gap: 20px;
+    width: 100%;
 }
 
 
@@ -118,8 +123,12 @@ header h2 {
     padding: 20px;
 
 }
+
+
 .wrapper {
     display: flex;
+    flex:1;
+    
     flex-direction: row;
 }
 
@@ -128,9 +137,9 @@ header h2 {
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 100vh;
     background-color: #2e6793;
     padding: 10px;
+    height: 100%;
 }
 
 .side-nav #nav {
@@ -158,7 +167,7 @@ header h2 {
 
 main {
     display: flex;
-    justify-content: flex-start;
+    
     align-items: center;
     flex-direction: column;
     flex: 1;
@@ -168,15 +177,12 @@ main {
 }
 
 #homeVideo {
-    flex: flex-start;
-    justify-content: left;
-    align-items: left;
+    
+    
     display: flex;
     padding: 10px;
-    min-width: 200px;
-    min-height: 200px;
-    width: auto;
-    height: auto;
+
+   
     
 }
 #contact {
