@@ -73,13 +73,31 @@ function selectAnswer(selected) {
         } else {
             const quizContainer = document.getElementById("quiz-container");
             quizContainer.innerHTML = `<p>Quiz Completed!</h2>
-            <p>You answered ${correctAnswers} out of ${questions.length} questions correctly.</p>`;
+            <p>You answered ${correctAnswers} out of ${questions.length} questions correctly.</p>
+            <button id="try-again-button">Try Again</button>`;
+
+            const tryAgainButton = document.getElementById("try-again-button");
+            tryAgainButton.addEventListener("click", resetQuiz);
         }
         
 
     }, 2000);
 }
-
+function resetQuiz() {
+    currentQuestion = 0; // Reset the current question index
+    correctAnswers = 0; // Reset the score
+    const quizContainer = document.getElementById("quiz-container");
+    quizContainer.innerHTML = `
+        <p id="question-text" class="question-text"></p>
+        <div class="choices">
+            <button class="choice" onclick="selectAnswer(0)"></button>
+            <button class="choice" onclick="selectAnswer(1)"></button>
+            <button class="choice" onclick="selectAnswer(2)"></button>
+        </div>
+        <div id="feedback" class="feedback"></div>
+    `;
+    showQuestion(); // Reload the first question
+}
 document.addEventListener("DOMContentLoaded", () => {
     showQuestion(); 
 });
