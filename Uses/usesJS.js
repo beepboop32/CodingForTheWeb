@@ -46,6 +46,7 @@ function showQuestion() {
 
     const feedback = document.getElementById("feedback");
     feedback.textContent = "";
+    feedback.style.display = "none";
 }
 
 

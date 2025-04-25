@@ -116,6 +116,8 @@ header h2 {
     flex-direction: row;
 }
 
+
+
 .side-nav {
     font-size: 20px;
     display: flex;
@@ -253,9 +255,12 @@ main {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #e6f0f7;
-    
-    
+    background-color: #e6f0f7; 
+}
+
+.wrapper_inner img {
+    width: 50%;
+    align-self: center;
 }
 
 h2 {
@@ -309,17 +314,17 @@ h2 {
 
 }
 
-@media (min-width: 601px), (min-height: 601px){
-    .menu{
-        display: none;
-    }
-
-}
 
 @media (min-width: 601px) {
     .hamburger-menu {
         display: none;
     }
+
+    .menu{
+        display: none;
+    }
+
+    
     header {
         font-size: 18px;
     }

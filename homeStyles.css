@@ -176,15 +176,12 @@ main {
     
 }
 
-#homeVideo {
-    
-    
+#homeVideo, #homeVideo2 {
     display: flex;
-    padding: 10px;
-
-   
-    
+    padding: 10px
 }
+
+
 #contact {
     display: flex;
     justify-content: center;
@@ -460,7 +457,7 @@ h2 {
         display: flex;
 
     }
-    #homeVideo {
+    #homeVideo, #homeVideo2 {
         width: 100%;
         height: auto;
         min-width: 150px;

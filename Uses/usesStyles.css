@@ -171,6 +171,7 @@ footer {
     border: 2px solid #3476ab; 
     text-align: center;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 
@@ -295,7 +296,7 @@ footer {
     top: 0px;
     left: 0;
     width:200px;
-    height: 100vh;
+    
     z-index: 100;
     background: #2e6793;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -340,6 +341,7 @@ footer {
     padding: 20px;
     background-color: #e6f0f7;
 }
+
 
 
 
