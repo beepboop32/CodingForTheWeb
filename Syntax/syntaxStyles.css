@@ -163,6 +163,14 @@ main {
 
 
 
+.wrapper_inner img {
+    max-width: 600px;
+    max-height: 400px;
+    
+}
+
+
+
 #hamburgerImg {
     height: auto;
     width: 40px;
