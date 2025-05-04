@@ -168,11 +168,14 @@ header h2 {
     display: flex;
     flex-direction: column;
     gap: 15px; /* Add spacing between rows */
-    width: 100%; /* Ensure the form takes up the full width */
+    width: 100%; 
     padding: 10px;
-    max-width: 600px; /* Optional: Limit the form's width */
-    margin: 0 auto; /* Center the form horizontally */
-    background-color: #ffffff;
+    max-width: 600px; 
+    margin: 0 auto; 
+    
+    background-color: #cee5f1;
+    border-radius: 20px;
+    border: 5px solid #3476ab; 
 }
 
 

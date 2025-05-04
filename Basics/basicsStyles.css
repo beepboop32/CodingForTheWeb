@@ -272,35 +272,40 @@ main {
     padding: 20px;
 }
 
-.box {
+
+.wrapper_inner {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: row;
     gap: 20px;
-    border: 4px solid #3476ab;
+    padding: 20px;
     background-color: #e6f0f7;
-    padding: 10px;
-    margin: 10px;
-    width: auto;
-   
-    box-sizing: border-box; 
     flex-wrap: wrap;
+ 
 }
 
 #explainations {
     flex: 1;
     padding: 20px;
-    border: 2px solid #3476ab;
-    background-color: #e6f0f7;
+ 
+
+    background-color: #cee5f1;
+    border-radius: 20px;
+    border: 5px solid #3476ab; 
+    max-width: 50%;
+    box-sizing: border-box;
 }
 
 #rightBox {
+   
+
     flex: 1;
     padding: 20px;
-    border: 2px solid #3476ab;
-    background-color: #e6f0f7;
-    max-width: 1000px;
+    background-color: #cee5f1;
+    border-radius: 20px;
+    border: 5px solid #3476ab; 
+    box-sizing: border-box;
 }
 
 #syntaxImg {
