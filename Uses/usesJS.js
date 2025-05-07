@@ -45,23 +45,22 @@ function showQuestion() {
     });
 
     const feedback = document.getElementById("feedback");
-    feedback.textContent = "";
-    feedback.style.display = "none";
+    feedback.style.opacity = 0;
 }
 
 
 function selectAnswer(selected) {
     const feedback = document.getElementById("feedback");
-    feedback.style.display = "block";
+    feedback.style.opacity = 1;
     if (selected === questions[currentQuestion].correct) {
         feedback.textContent = "Correct!";
         feedback.style.color = "green";
-        feedback.style.fontWeight = "bold";
+        
         correctAnswers++;
     } else {
         feedback.textContent = "Incorrect!";
         feedback.style.color = "red";
-        feedback.style.fontWeight = "bold";
+        
     }
 
 
