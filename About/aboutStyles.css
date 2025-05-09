@@ -385,3 +385,35 @@ main {
     }
 
 }
+
+@media (max-width: 870px) {
+    .menu {
+        display: none;
+    }
+    #documentation {
+        display: none;
+    }
+    #responsiveDoc {
+        display: flex;
+
+    }
+    
+    header h1  {
+        font-size: 35px;
+    }
+    #footerLogo {
+        display: none;
+    }
+    #contact {
+        display: none;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .side-nav {
+        display: none;
+    }
+    #documentationImg {
+        display: none;
+    }
+}
