@@ -30,3 +30,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         feedback.style.fontWeight = "bold";
     }
 });
+
+
+function contactPage() {
+    window.open("../Contact/contact.html");
+}

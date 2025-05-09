@@ -8,7 +8,27 @@ html, body {
     user-select: none;
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 
+    padding: 20px 30px;
+    margin-left:25px;
+    margin-right: 25px;
+    background-color: #e6f0f7;
+    transition: 0.3s;
+    border: #2e6793 solid 3px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#contact:hover {
+    transition: 0.3s;
+    background-color: #3476ab;
+    color: #ffffff;
+}
 
 main {
     flex: 1;
@@ -20,7 +40,7 @@ main {
 header {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px;
     background-color: #ffffff;
     color: #3476ab;
